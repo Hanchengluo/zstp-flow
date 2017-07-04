@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+        <title>审批详情</title>
+        <link rel="stylesheet" href="css/weui.min.css"/>
+        <link rel="stylesheet" href="css/swipebox.min.css">
+        <link rel="stylesheet" href="css/layer.css">
+        <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/iconfont.css">
+    </head>
+    <body class="layout_pdb50">
+        <div class="layout_mgb10">
+            <div class="weui-cells__title">推送内容</div>
+            <div class="weui-cells">
+                <div class="weui-article">
+                    <h2 class="title">推文审批-2017062123821</h2>
+                    <div class="name">20170621 17:30 黄志聪 <span class="weui-badge weui-badge_primary">日常推文</span></div>
+                    <div class="info">
+                        今天的文章比较急，麻烦各位审批的时候尽快，文章内容是关于：毕业典礼| 从来没有见过院长这么萌！
+                        <br>
+                        <a href="http://6539.aie5.com">http://6539.aie5.com</a>
+                    </div>
+                    <div class="info">
+                        推送时间：2017-06-25
+                    </div>
+                </div>
+            </div>
+            <div class="weui-cells__title">审批操作</div>
+            <div class="weui-cells page-padding10">
+                <a href="javascript:;" class="weui-btn weui-btn_primary" onclick="cuiban()">催办一下</a>
+            </div>
+            <div class="weui-cells__title">审批环节</div>
+            <div id="weui-flow" class="weui-cells page-padding10">
+                <div class="weui-flow-box">
+                    <ul class="">
+                        <li class="weui-flow-items open">
+                            <p class="weui-img"><img src="images/in4.jpg" alt=""></p>
+                            <p class="weui-name">张三</p>
+                        <li class="weui-flow-items weui-arrow-box open">
+                            <span class="weui-arrow">》</span>
+                        </li>
+                        <li class="weui-flow-items open">
+                            <p class="weui-img"><img src="images/in5.jpg" alt=""></p>
+                            <p class="weui-name">李思思</p>
+                        </li>
+                        <li class="weui-flow-items weui-arrow-box open">
+                            <span class="weui-arrow">》</span>
+                        </li>
+                        <li class="weui-flow-items">
+                            <p class="weui-img"><img src="images/in6.jpg" alt=""></p>
+                            <p class="weui-name">欧阳飞虎</p>
+                        </li>
+                        <li class="weui-flow-items weui-arrow-box">
+                            <span class="weui-arrow">》</span>
+                        </li>
+                        <li class="weui-flow-items">
+                            <p class="weui-img"><img src="images/in7.jpg" alt=""></p>
+                            <p class="weui-name">李四</p>
+                        </li>
+                        <li class="weui-flow-items weui-arrow-box">
+                            <span class="weui-arrow">》</span>
+                        </li>
+                        <li class="weui-flow-items">
+                            <p class="weui-img"><img src="images/in8.jpg" alt=""></p>
+                            <p class="weui-name">王五</p>
+                        </li>
+                        <li class="weui-flow-items weui-arrow-box">
+                            <span class="weui-arrow">》</span>
+                        </li>
+                        <li class="weui-flow-items"><!-- 使用注释 完成的时候在weui-flow-items后面加入 open 类 -->
+                            <p class="weui-finish"></p>
+                            <p class="weui-name">完成</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="weui-cells__title">审批意见</div>
+            <div id="approval-comments" class="weui-cells">
+               <div class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/in5.jpg" alt="">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">张三 <span class="label">已批</span>   </h4>
+                        <p class="weui-media-box-mag">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                    </div>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/in4.jpg" alt="">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">张三 <span class="label">已批</span>   </h4>
+                        <p class="weui-media-box-mag">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                        <div class="weui-media-box-img">
+                            <div class="weui-cell__bd weui-cell_primary">
+                                <div class="weui-uploader">
+                                    <div class="weui-uploader__bd wxuploadimgdiv">
+                                        <a rel="gallery-2" href="images/WechatIMG235.jpeg" class="swipebox weui-uploader__file ">
+                                            <img width="100%" height="100%" src="images/WechatIMG235.jpeg" alt="image">
+                                        </a>
+                                        <a rel="gallery-2" href="images/WechatIMG236.jpeg" class="swipebox weui-uploader__file" title="Fog">
+                                            <img width="100%" height="100%" src="images/WechatIMG236.jpeg" alt="image">
+                                        </a>
+                                        <a rel="gallery-2" href="images/WechatIMG237.jpeg" class="swipebox weui-uploader__file">
+                                            <img width="100%" height="100%" src="images/WechatIMG237.jpeg" alt="image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="weui-media-box weui-media-box_appmsg">
+                    <div class="weui-media-box__hd">
+                        <img class="weui-media-box__thumb" src="images/in7.jpg" alt="">
+                    </div>
+                    <div class="weui-media-box__bd">
+                        <h4 class="weui-media-box__title">赵六 <span class="label-warn">退回</span>   </h4>
+                        <p class="weui-media-box-mag">由各种物质组成的巨型球状天体，叫做星球。星球有一定的形状，有自己的运行轨道。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-footer">
+            <p class="weui-footer__links">
+                <a href="http://www.tgc360.com" class="weui-footer__link">众创云</a>
+            </p>
+            <p class="weui-footer__text">Copyright © 2008-2016 www.tgc360.com</p>
+        </div>
+    </body>
+    <script type="text/javascript" src="js/weui.min.js"></script>
+    <script type="text/javascript" src="js/jquery-2.1.0.min.js"></script>
+    <script type="text/javascript" src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <script src="js/layer.js"></script>
+    <script>
+    function cuiban(){
+        layer.open({
+            title: [
+              '催办一下',
+              'background-color: #1AAD19; color:#fff;'
+            ]
+            ,content: '你的催办已经成功提交，一小时后才可以进行下一次催办。'
+            ,anim: 'scale'
+        });
+    }
+    </script>
+</html>
